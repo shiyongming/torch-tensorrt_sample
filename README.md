@@ -11,6 +11,19 @@
    
     c. start a notebook: `jupyter notebook --ip=0.0.0.0 --NotebookApp.token='' --no-browser --port=8888 --allow-root`
 
-2. on your windows notebook tap win+r and run cmd
+
+
+2. on your windows notebook tap `win+r` and run `cmd`
+
+
 3. In cmd window run ssh -N -f -L `localhost:8889:localhost:8888 -p 22 username@server_ip_address`. Please change the username and ip address.
+
+
 4. open a browser amd enter `localhost:8889` 
+   
+
+5. Some benchmarks (time per batch) of SSD300 on 3080Ti GPU
+
+   Batch=1
+   
+   pytorch-fp32: 4.93ms, torch-tensorrt-fp32: 4.08ms, torch-tensorrt-fp16: 1.02ms, torch-tensorrt-int8: 0.73ms 
