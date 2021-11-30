@@ -22,7 +22,7 @@
 4. open a browser amd enter `localhost:8889` 
    
 
-5. Some benchmarks (time per batch) of SSD300 on 3080Ti GPU
+5. Some benchmarks (time per batch) of SSD300 
 
    Batch=1
    
